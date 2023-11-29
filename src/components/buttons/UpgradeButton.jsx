@@ -38,7 +38,7 @@ export default function UpgradeButton({type, data, latestVersion}) {
                 disabled={allDataUpToDate}
                 startIcon={!allDataSameVersion && !allDataUpToDate ? <WarningIcon style={{ color: 'orange' }} /> : null}
             >
-                {allDataUpToDate ? `Latest ${type} Version` : `Upgrade ${type} to Latest Version`}
+                {allDataUpToDate ? `Latest ${type} Version` : `Upgrade ${type} Version`}
             </Button>
         </Tooltip>
     );
