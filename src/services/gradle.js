@@ -1,8 +1,8 @@
-import api from './api';
+import axios from "axios";
 
 export const getLatestGradleVersion = async () => {
     try {
-        const response = await api.get('/gradle/version');
+        const response = await axios.get('/gradle/version');
         return response.data;
     } catch (error) {
         console.error('Error fetching Gradle version', error);
